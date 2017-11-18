@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1 th:text="${title}"></h1>
-    <form method="post">
+    <form method="POST">
         <tr th:each="mapItem : ${cheeses}">
             <td th:text="${mapItem.key}">Key</td>
             <h2><td th:text="${mapItem.value}"></td></h2>
