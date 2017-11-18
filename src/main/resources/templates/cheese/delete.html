@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body>
+    <h1 th:text="${title}"></h1>
+    <form method="post">
+        <tr th:each="mapItem : ${cheeses}">
+            <td th:text="${mapItem.key}">Key</td>
+            <h2><td th:text="${mapItem.value}"></td></h2>
+        </tr>
+
+
+        <!--<tr th:each="mapItem:${cheeses}">
+            <td th:text="${mapItem.key}">Key</td>
+                <input type="checkbox" name="cheese" value="th:text"/>
+                <input type="submit" value="Delete"/>
+
+        </tr>-->
+    </form>
+</body>
+</html>
